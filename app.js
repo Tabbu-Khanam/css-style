@@ -1,6 +1,11 @@
 const input = document.getElementById('input');
 const button = document.getElementById('button1');
 const arr = document.getElementById('arr');
+
+
+
+
+
 button.addEventListener('click', () => {
     if(input.value.toUpperCase() === "TITLE" ) {
        arr.style.backgroundColor = "#f1f11";
@@ -27,3 +32,4 @@ button.addEventListener('click', () => {
      }
 
 });
+

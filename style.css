@@ -5,15 +5,15 @@
 
 body {
 font-family:Arial, Helvetica, sans-serif;
-margin: 0px 8px;
+margin: 0px;
 
 }
 
 
 img {
-    display: flex;
-    width: 60px;
-    height: 6px;
+   width: 60px;
+   height: 60px;
+   
 }
 .nav {
     display: flex;
@@ -84,6 +84,7 @@ span {
    text-align: center;
    padding: 5px;
    font-size: 15px;
+   
 }
 .under > a:hover {
     background-color: green;
@@ -92,9 +93,9 @@ span {
 .under {
     width: 220px;
     position: absolute;
+
     background-color: #f1f1f1;
 }
-
 
 main {
  margin-left: 240px;
@@ -138,16 +139,17 @@ div.para {
     margin-left: -10px;
     background-color: rgb(209, 209, 53);
 }
-pre {
+.pre {
     font-size: 20px;
     background-color: white;
     padding: 10px;
     border-left: 4px solid green;
+    
 }
 
 .sec {
     background-color: #ddd;
-    padding: 20px;
+   
 }
 hr {
     background-color: #f1f1f1;
@@ -168,4 +170,45 @@ hr {
  background-color: white;
  padding: 10px;
  color: black;
+}
+
+@media screen and (max-width: 1200px) {
+    .nav > a.green {
+        display: none;
+    }
+    .nav > a.right {
+        display: block;
+    }
+    .header > a:nth-child(9),
+    .header > a:nth-child(10),
+    .header > a:nth-child(11),
+    .header > a:nth-child(12) {
+     display: none;
+    }
+
+}
+@media screen and (max-width: 828px) {
+    .header > a:nth-child(8),
+    .header > a:nth-child(7) {
+        display: none;
+    }
+    .nav > a.right {
+        display: none;
+    }
+
+}
+@media screen and (max-width: 800px) {
+    .under {
+        display: none;
+    }
+    main {
+    margin: 0px;
+   
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav > a:nth-child(4),  .nav > a:nth-child(5){
+      display: none;
+    }
 }
